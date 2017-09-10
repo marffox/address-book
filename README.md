@@ -3,7 +3,11 @@
 ## Node version: 5.12.0
 ## Nmp version: 3.8.6
 
-## Run application:
+## Install dependencies
+
+npm install
+
+## Run for development:
 
 npm run start:dev
 
