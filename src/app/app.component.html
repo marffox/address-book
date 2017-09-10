@@ -1,0 +1,16 @@
+<div class="container">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <div class="nav navbar-nav">
+            <a class="navbar-brand" [routerLink]="['/contacts']">Address Book</a>
+        </div>
+        <button class="btn btn-primary navbar-btn pull-right"
+            type="button"
+            data-toggle="button"
+            aria-pressed="false"
+            autocomplete="off"
+            [routerLink]="['/add']">
+            Add Contact
+        </button>
+    </nav>
+    <router-outlet></router-outlet>
+</div>

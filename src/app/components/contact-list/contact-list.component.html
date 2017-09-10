@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-12">
+        <ul *ngIf="contacts" class="list-group contact-list">
+            <div class="row field-title">
+                <div class="col-md-3"><p>Name</p></div>
+                <div class="col-md-3"><p>Email</p></div>
+                <div class="col-md-3"><p>Country</p></div>
+                <div class="col-md-3"></div>
+            </div>
+            <li class="list-group-item" *ngFor="let contact of contacts">
+                <div class="row">
+                    <div class="col-md-3">
+                        <span class="">{{contact.firstName}}</span>
+                        <span class="">{{contact.lastName}}</span>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="email">{{contact.email}}</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="country">{{contact.country}}</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="contact-list-button">
+                            <button class="btn btn-info pull-right navbar-btn" [routerLink]="['/edit', contact.id]">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

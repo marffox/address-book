@@ -1,0 +1,12 @@
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// Fonts
+@import '../fonts/open-sans/open-sans.css';
+//Base
+@import "base/variables";
+@import "base/colors";
+@import "base/base";
+//Components
+@import "../../app/app.component";
+@import "../../app/components/contact-list/contact-list.component";
+@import "../../app/components/contact-edit/contact-edit.component";
