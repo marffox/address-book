@@ -12,7 +12,7 @@
     "build": "rimraf dist && webpack --config webpack-config/webpack.prod.js --progress --bail",
     "lint": "tslint ./src/**/*.ts -t verbose"
   },
-  "author": "Cl3ver",
+  "author": "Rafa Marfil",
   "license": "",
   "dependencies": {
     "@angular/common": "~4.0.0",
